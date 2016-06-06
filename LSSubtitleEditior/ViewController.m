@@ -108,8 +108,8 @@
                     NSString *changedStartDateString = [timeFormatter stringFromDate:changedStartDate];
                     NSString *changedEndDateString = [timeFormatter stringFromDate:changedEndDate];
                     
-                    [completeString stringByReplacingOccurrencesOfString:startTimeString withString:changedStartDateString];
-                    [completeString stringByReplacingOccurrencesOfString:endTimeString withString:changedEndDateString];
+                    completeString = [completeString stringByReplacingOccurrencesOfString:startTimeString withString:changedStartDateString];
+                    completeString = [completeString stringByReplacingOccurrencesOfString:endTimeString withString:changedEndDateString];
                 }
             }
         }
